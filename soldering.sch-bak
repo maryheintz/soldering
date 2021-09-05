@@ -1,0 +1,94 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Soldering Practice"
+Date "2021-08-31"
+Rev "1"
+Comp "Electronics Development Group"
+Comment1 "Mary Heintz"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 612F07F1
+P 1800 1350
+F 0 "R1" V 1593 1350 50  0000 C CNN
+F 1 "R" V 1684 1350 50  0000 C CNN
+F 2 "" V 1730 1350 50  0001 C CNN
+F 3 "~" H 1800 1350 50  0001 C CNN
+	1    1800 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 612F2B14
+P 900 1350
+F 0 "#PWR01" H 900 1200 50  0001 C CNN
+F 1 "+5V" H 915 1523 50  0000 C CNN
+F 2 "" H 900 1350 50  0001 C CNN
+F 3 "" H 900 1350 50  0001 C CNN
+	1    900  1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 612F363D
+P 2550 1350
+F 0 "#PWR02" H 2550 1100 50  0001 C CNN
+F 1 "GND" H 2555 1177 50  0000 C CNN
+F 2 "" H 2550 1350 50  0001 C CNN
+F 3 "" H 2550 1350 50  0001 C CNN
+	1    2550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 612F4260
+P 2200 1350
+F 0 "D1" H 2193 1567 50  0000 C CNN
+F 1 "LED" H 2193 1476 50  0000 C CNN
+F 2 "" H 2200 1350 50  0001 C CNN
+F 3 "~" H 2200 1350 50  0001 C CNN
+	1    2200 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1350 2500 1350
+Wire Wire Line
+	1950 1350 2050 1350
+Wire Wire Line
+	900  1350 1350 1350
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 612F5A61
+P 1350 1350
+F 0 "#FLG01" H 1350 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1523 50  0000 C CNN
+F 2 "" H 1350 1350 50  0001 C CNN
+F 3 "~" H 1350 1350 50  0001 C CNN
+	1    1350 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 1350
+Wire Wire Line
+	1350 1350 1650 1350
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 612F60CA
+P 2500 1350
+F 0 "#FLG02" H 2500 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 1523 50  0000 C CNN
+F 2 "" H 2500 1350 50  0001 C CNN
+F 3 "~" H 2500 1350 50  0001 C CNN
+	1    2500 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 1350
+Wire Wire Line
+	2500 1350 2550 1350
+$EndSCHEMATC
